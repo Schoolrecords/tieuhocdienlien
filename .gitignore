@@ -1,0 +1,25 @@
+# Rác Windows
+desktop.ini
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.lnk
+
+# macOS
+.DS_Store
+
+# Cài đặt Claude Code riêng máy (không chia sẻ qua repo)
+.claude/settings.local.json
+.claude/desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build/cache
+node_modules/
+.cache/
+.tmp/

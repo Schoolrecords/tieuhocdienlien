@@ -1,0 +1,97 @@
+#hss-sync-panel {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  width: 320px;
+  max-height: 60vh;
+  background: #ffffff;
+  border: 1.5px solid #1e40af;
+  border-radius: 12px;
+  box-shadow: 0 8px 28px rgba(30, 64, 175, 0.18);
+  font-family: "Be Vietnam Pro", "Segoe UI", Arial, sans-serif;
+  font-size: 13px;
+  color: #1e293b;
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: max-height 0.25s ease;
+}
+
+#hss-sync-panel.hss-collapsed {
+  max-height: 44px;
+}
+
+#hss-sync-panel .hss-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  color: #fff;
+  font-weight: 700;
+}
+
+#hss-sync-panel .hss-title {
+  font-size: 14px;
+}
+
+#hss-sync-panel .hss-toggle {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  line-height: 1;
+}
+
+#hss-sync-panel .hss-toggle:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+#hss-sync-panel .hss-body {
+  padding: 12px 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#hss-sync-panel .hss-status {
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  font-weight: 600;
+  font-size: 12.5px;
+  text-align: center;
+}
+
+#hss-sync-panel .hss-status.hss-loading { background: #dbeafe; color: #1e40af; }
+#hss-sync-panel .hss-status.hss-success { background: #dcfce7; color: #166534; }
+#hss-sync-panel .hss-status.hss-warn    { background: #fef3c7; color: #92400e; }
+#hss-sync-panel .hss-status.hss-error   { background: #fee2e2; color: #991b1b; }
+
+#hss-sync-panel .hss-log {
+  background: #0f172a;
+  color: #e2e8f0;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 11px;
+  line-height: 1.65;
+  max-height: 220px;
+  overflow-y: auto;
+}
+
+#hss-sync-panel .hss-log-line {
+  padding: 1px 0;
+  word-break: break-word;
+}
+
+#hss-sync-panel .hss-log-line.hss-success { color: #86efac; }
+#hss-sync-panel .hss-log-line.hss-warn    { color: #fcd34d; }
+#hss-sync-panel .hss-log-line.hss-error   { color: #fca5a5; }

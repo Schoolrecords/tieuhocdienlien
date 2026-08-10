@@ -1,0 +1,4 @@
+# Chỉ push Code.gs + appsscript.json lên Apps Script — KHÔNG đụng file frontend
+**/**
+!Code.gs
+!appsscript.json

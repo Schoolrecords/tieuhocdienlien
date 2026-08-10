@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ========== ĐỔI TÊN TRƯỜNG Ở ĐÂY KHI TẠO CHO TRƯỜNG MỚI ========== -->
+<title>Đảm bảo Chất lượng - Trường Tiểu học Diễn Liên</title>
+<meta name="description" content="Hồ sơ số chính thức cho Trường Tiểu học Diễn Liên. Hệ thống quản lý hồ sơ số, danh sách CBGVNV và học sinh — nhập dữ liệu qua Admin → Excel.">
+<link rel="canonical" href="https://hososotruonghoc.github.io/tieuhocdienlien/">
+<!-- Mobile / PWA-friendly -->
+<meta name="theme-color" content="#1E4A8F">
+<meta name="format-detection" content="telephone=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Hồ sơ số">
+<!-- Open Graph (Zalo, Facebook, Messenger link preview) -->
+<!--
+  ⚠ QUAN TRỌNG cho Zalo/Messenger:
+  • og:image PHẢI là URL tuyệt đối, cùng tên miền với trang (không dùng Google Drive)
+  • Upload og-banner.jpg lên gốc Netlify (cùng thư mục index.html) trước khi deploy
+  • Sau khi deploy, làm mới cache scrape tại:
+      – Facebook/Messenger: https://developers.facebook.com/tools/debug/
+      – Zalo: gửi link vào 1 chat bất kỳ rồi copy lại dán — Zalo tự scrape
+  • Kích thước khuyến nghị 1200×630 (tỉ lệ 1.91:1). Tối thiểu 300×200.
+-->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Hồ sơ số Trường Tiểu học Diễn Liên">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:url" content="https://hososotruonghoc.github.io/tieuhocdienlien/">
+<meta property="og:title" content="Hồ sơ số - Trường Tiểu học Diễn Liên">
+<meta property="og:description" content="Hồ sơ số chính thức cho Trường Tiểu học Diễn Liên. Hệ thống quản lý hồ sơ số, danh sách CBGVNV và học sinh — nhập dữ liệu qua Admin → Excel.">
+<meta property="og:image" content="https://hososotruonghoc.github.io/tieuhocdienlien/og-banner.jpg">
+<meta property="og:image:secure_url" content="https://hososotruonghoc.github.io/tieuhocdienlien/og-banner.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Hồ sơ số Trường Tiểu học Diễn Liên">
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="https://hososotruonghoc.github.io/tieuhocdienlien/">
+<meta name="twitter:title" content="Hồ sơ số - Trường Tiểu học Diễn Liên">
+<meta name="twitter:description" content="Hồ sơ số chính thức cho Trường Tiểu học Diễn Liên.">
+<meta name="twitter:image" content="https://hososotruonghoc.github.io/tieuhocdienlien/og-banner.jpg">
+<!-- Zalo — tuỳ chọn: nếu có Zalo OA thì điền ID, nếu không thì bỏ qua -->
+<meta property="zalo:official_account_id" content="">
+<!-- ========== HẾT PHẦN CẦN ĐỔI ========== -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%238dd3a8'/%3E%3Cstop offset='100%25' stop-color='%233fb28c'/%3E%3C/linearGradient%3E%3ClinearGradient id='l1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23a8e650'/%3E%3Cstop offset='100%25' stop-color='%235dba2f'/%3E%3C/linearGradient%3E%3ClinearGradient id='l2' x1='1' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%238edc40'/%3E%3Cstop offset='100%25' stop-color='%234aab20'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ccircle cx='32' cy='28' r='20' fill='%23fdfbf4'/%3E%3Cellipse cx='32' cy='38' rx='10' ry='6' fill='%238B6B52'/%3E%3Cellipse cx='32' cy='37' rx='9' ry='5' fill='%239B7B62'/%3E%3Cpath d='M32 36C32 36 31 24 32 18' stroke='%236BBF3B' stroke-width='2.5' stroke-linecap='round' fill='none'/%3E%3Cpath d='M33 22C38 14 46 12 49 15C51 17 47 24 40 27C35 29 33 26 33 22Z' fill='url(%23l1)'/%3E%3Cpath d='M31 26C26 19 18 17 15 20C13 22 17 28 24 30C29 32 31 29 31 26Z' fill='url(%23l2)'/%3E%3Cpath d='M34 30C37 26 42 25 44 27C45 28 43 32 38 33C35 34 34 32 34 30Z' fill='%23a8e650' opacity='0.8'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%238dd3a8'/%3E%3Cstop offset='100%25' stop-color='%233fb28c'/%3E%3C/linearGradient%3E%3ClinearGradient id='l1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%23a8e650'/%3E%3Cstop offset='100%25' stop-color='%235dba2f'/%3E%3C/linearGradient%3E%3ClinearGradient id='l2' x1='1' y1='0' x2='0' y2='1'%3E%3Cstop offset='0%25' stop-color='%238edc40'/%3E%3Cstop offset='100%25' stop-color='%234aab20'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='url(%23g)'/%3E%3Ccircle cx='32' cy='28' r='20' fill='%23fdfbf4'/%3E%3Cellipse cx='32' cy='38' rx='10' ry='6' fill='%238B6B52'/%3E%3Cellipse cx='32' cy='37' rx='9' ry='5' fill='%239B7B62'/%3E%3Cpath d='M32 36C32 36 31 24 32 18' stroke='%236BBF3B' stroke-width='2.5' stroke-linecap='round' fill='none'/%3E%3Cpath d='M33 22C38 14 46 12 49 15C51 17 47 24 40 27C35 29 33 26 33 22Z' fill='url(%23l1)'/%3E%3Cpath d='M31 26C26 19 18 17 15 20C13 22 17 28 24 30C29 32 31 29 31 26Z' fill='url(%23l2)'/%3E%3Cpath d='M34 30C37 26 42 25 44 27C45 28 43 32 38 33C35 34 34 32 34 30Z' fill='%23a8e650' opacity='0.8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Preconnect/dns-prefetch tới Cloudflare Worker (proxy API) — bypass adblocker/firewall -->
+<link rel="preconnect" href="https://thdienlien-api.xebatcheotrt.workers.dev" crossorigin>
+<link rel="dns-prefetch" href="https://thdienlien-api.xebatcheotrt.workers.dev">
+<link rel="dns-prefetch" href="https://drive.google.com">
+<link rel="dns-prefetch" href="https://lh3.googleusercontent.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,500&family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- ⚡ EARLY FETCH: bắn JSONP tới GAS ngay khi trình duyệt đọc <head>.
+     Khi main script chạy, dữ liệu có thể đã về → rút ngắn màn hình loading 1–2s -->
+<script>
+(function(){
+  var API_URL_EARLY = 'https://thdienlien-api.xebatcheotrt.workers.dev/';
+  window.__earlyCb = function(resp){ window.__earlyData = resp; };
+  window.__earlyFailed = false;
+  var s = document.createElement('script');
+  s.src = API_URL_EARLY + '?action=all&callback=__earlyCb';
+  s.async = true;
+  s.onerror = function(){ window.__earlyFailed = true; };
+  (document.head || document.documentElement).appendChild(s);
+})();
+</script>
+<link rel="stylesheet" href="style.css?v=2026.05.13-cf-worker">
+<style>
+/* Eye toggle cho password input — 2026-05-09 */
+.pw-wrap{position:relative;display:block}
+.pw-wrap input{padding-right:40px!important}
+.pw-eye{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:transparent;border:0;cursor:pointer;padding:6px;color:#94a3b8;font-size:16px;line-height:1;border-radius:4px}
+.pw-eye:hover{color:#475569;background:#f1f5f9}
+@media(max-width:640px){.pw-eye{padding:10px;font-size:18px;min-width:40px;min-height:40px}.pw-wrap input{padding-right:48px!important}}
+</style>
+<script>
+function pwToggle(btn){
+  var inp = btn.previousElementSibling;
+  if(!inp || (inp.type!=='password' && inp.type!=='text')) return;
+  inp.type = inp.type==='password' ? 'text' : 'password';
+  btn.textContent = inp.type==='password' ? '👁' : '🙈';
+}
+</script>
+<style>
+.dbcl-table{width:100%;border-collapse:collapse;font-size:.92rem}
+.dbcl-table th{background:#f0fdf4;color:#16a34a;padding:10px 12px;text-align:left;font-weight:600;border-bottom:2px solid #bbf7d0}
+.dbcl-table td{padding:10px 12px;border-bottom:1px solid #eef2ef}
+.dbcl-table tr:hover{background:#fafbfd}
+.leaf-link{display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;background:#dcfce7;color:#16a34a;border-radius:8px;text-decoration:none;font-size:1rem;transition:all .2s}
+.leaf-link:hover{background:#16a34a;color:white;transform:scale(1.05)}
+/* ⭐ Tab navigation cho 5 tab ĐBCL */
+.dbcl-tabs{max-width:1100px;margin:0 auto 24px;background:white;border-radius:16px;padding:8px;box-shadow:0 6px 24px rgba(0,0,0,.06);display:flex;gap:6px;flex-wrap:wrap;justify-content:center}
+.dbcl-tab{flex:1;min-width:140px;padding:14px 10px;border:none;background:transparent;border-radius:12px;cursor:pointer;font-family:inherit;font-size:.92rem;color:#5a6b64;font-weight:600;transition:all .2s;display:flex;flex-direction:column;align-items:center;gap:4px}
+.dbcl-tab:hover{background:#f0fdf4;color:#16a34a}
+.dbcl-tab.active{background:linear-gradient(135deg,#16a34a,#0d9488);color:white;box-shadow:0 4px 12px rgba(22,163,74,.3)}
+.dbcl-tab-icon{font-size:1.4rem}
+.dbcl-tab-label{font-size:.82rem;line-height:1.2;text-align:center}
+.dbcl-tab-content{display:none;animation:fadeIn .3s ease-out}
+.dbcl-tab-content.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.dbcl-soon{text-align:center;padding:50px 24px;background:white;border-radius:18px;box-shadow:0 6px 24px rgba(0,0,0,.06);max-width:760px;margin:0 auto}
+.dbcl-soon-icon{font-size:3.2rem;margin-bottom:12px}
+.dbcl-soon h3{font-family:Fraunces,serif;color:#16a34a;margin-bottom:10px}
+.dbcl-soon p{color:#5a6b64;line-height:1.7;max-width:560px;margin:0 auto 14px}
+.dbcl-soon ul{text-align:left;display:inline-block;color:#475569;line-height:2;margin:0 auto}
+.dbcl-link-card{display:flex;align-items:center;gap:14px;padding:18px 22px;background:white;border-radius:14px;text-decoration:none;color:inherit;border:2px solid #e5e7eb;transition:all .2s}
+.dbcl-link-card:hover{border-color:#16a34a;transform:translateY(-2px);box-shadow:0 8px 20px rgba(22,163,74,.12)}
+.dbcl-link-ic{width:50px;height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;color:white;flex-shrink:0}
+.dbcl-link-body{flex:1}
+.dbcl-link-body b{display:block;color:#0f172a;font-size:1rem;margin-bottom:2px}
+.dbcl-link-body span{color:#64748b;font-size:.85rem}
+/* ⭐ Mobile responsive — bảng tránh tràn ngang + tabs gọn lại */
+.dbcl-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:8px}
+.dbcl-table-wrap table{min-width:560px}
+@media(max-width:768px){
+  .dbcl-tabs{padding:6px;gap:4px}
+  .dbcl-tab{min-width:0;padding:10px 6px;font-size:.78rem;flex:1 1 calc(33.33% - 4px)}
+  .dbcl-tab-icon{font-size:1.2rem}
+  .dbcl-tab-label{font-size:.72rem}
+  .dbcl-link-card{padding:14px 16px;gap:10px}
+  .dbcl-link-ic{width:42px;height:42px;font-size:1.2rem}
+  .dbcl-soon{padding:30px 18px}
+  .dbcl-soon-icon{font-size:2.6rem}
+}
+@media(max-width:480px){
+  .dbcl-tab{flex:1 1 calc(50% - 4px)}
+  .dbcl-tab-label{font-size:.7rem}
+}
+</style>
+</head>
+<body>
+
+<!-- ⭐ MODAL ĐĂNG NHẬP — chỉ hiện khi cán bộ vào "phòng khoá" (sửa điểm / Admin / KĐCL).
+     Khách, phụ huynh, đoàn kiểm tra vào trang KHÔNG thấy modal này. -->
+<div id="authGate" class="is-hidden" role="dialog" aria-modal="true" aria-labelledby="authTitle">
+  <div class="auth-card">
+    <div class="auth-emoji" id="authEmoji">🔑</div>
+    <h2 id="authTitle">Đăng nhập</h2>
+    <p class="auth-sub" id="authSub">Dành cho cán bộ trường. Vui lòng đăng nhập bằng <b>tài khoản</b> được cấp.</p>
+    <form id="authForm" onsubmit="return submitAuthForm(event)">
+      <label for="authInput" id="authLabel">Tên đăng nhập</label>
+      <input type="text" id="authInput" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false"
+             placeholder="Nhập tên đăng nhập" required>
+      <label for="authPassword" id="authLabelPwd" style="margin-top:8px">Mật khẩu</label>
+      <span class="pw-wrap"><input type="password" id="authPassword" autocomplete="current-password"
+             placeholder="Mật khẩu"><button type="button" class="pw-eye" onclick="pwToggle(this)" title="Hiện/ẩn mật khẩu" tabindex="-1">👁</button></span>
+      <button type="submit" class="auth-btn" id="authBtn">Vào</button>
+      <button type="button" class="auth-cancel" onclick="cancelAuthGate()">← Quay lại</button>
+      <div id="authMsg" class="auth-msg"></div>
+    </form>
+    <div class="auth-hint" id="authHint">
+      💡 <b>Lưu ý:</b> Tài khoản đăng nhập do <b>Admin</b> cấp. Mỗi máy/điện thoại chỉ cần đăng nhập <b>một lần</b> — lần sau tự động bỏ qua.
+      Nếu quên mật khẩu, liên hệ Hiệu trưởng/PHT qua Zalo nhóm trường.
+    </div>
+  </div>
+</div>
+
+<div id="loadScreen">
+  <div style="text-align:center">
+    <div class="spin"></div>
+    <p>Đang cập nhật dữ liệu, vui lòng đợi!</p>
+  </div>
+</div>
+
+<!-- ⭐ NAV 4 TRANG -->
+<nav>
+  <div class="logo"><div class="logo-mark">📊</div><span id="navSchoolName">Tiểu học ...</span></div>
+  <ul class="nav-links">
+    <li><a href="javascript:void(0)" onclick="return goToHss(event)">Hồ sơ số 📚</a></li>
+    <li><a href="javascript:void(0)" onclick="return goToKdcl(event)">Kiểm định CL 🏅</a></li>
+    <li><a href="#" aria-current="page">Đảm bảo CL 📊</a></li>
+    <li><a href="javascript:void(0)" onclick="return showQlcl(event)">QL Chất lượng 📈</a></li>
+  </ul>
+  <button class="nav-cta" onclick="goToHss()">⚙ Admin</button>
+  <button class="hamburger" onclick="toggleMenu()">☰</button>
+</nav>
+<div class="mobile-backdrop" id="backdrop" onclick="toggleMenu()"></div>
+<aside class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="toggleMenu()">✕</button>
+  <a href="javascript:void(0)" onclick="toggleMenu();return goToHss(event)">Hồ sơ số 📚</a>
+  <a href="javascript:void(0)" onclick="toggleMenu();return goToKdcl(event)">Kiểm định CL</a>
+  <a href="#" onclick="toggleMenu();return false;" style="font-weight:700;color:#16a34a">📊 Đảm bảo CL (đang xem)</a>
+  <a href="javascript:void(0)" onclick="toggleMenu();return showQlcl(event)">QL Chất lượng</a>
+  <button class="nav-cta" style="width:100%;margin-top:18px;font-size:.95rem;padding:14px" onclick="toggleMenu();goToHss()">⚙ Admin</button>
+  <button onclick="toggleMenu();logoutSchool()" style="width:100%;margin-top:10px;font-size:.9rem;padding:12px;background:#f1f5f9;color:#475569;border:1px solid #cbd5e1;border-radius:10px;cursor:pointer">🚪 Đăng xuất</button>
+</aside>
+
+<!-- ⭐ HERO ĐBCL — đồng nhất tone xanh dương với HSS/KĐCL (Refactor 2026-05-12) -->
+<section class="hero" style="min-height:auto;padding:80px 20px 40px;background:linear-gradient(135deg,#1E4A8F 0%,#2d6e9a 100%)">
+  <div class="hero-content" style="max-width:1100px;margin:0 auto;text-align:center">
+    <div class="eyebrow"><span class="dot"></span>Hệ thống Đảm bảo Chất lượng Giáo dục</div>
+    <h1 class="display" style="margin:14px 0 10px;font-size:clamp(1.8rem,3.4vw,2.8rem)">Đảm bảo Chất lượng</h1>
+  </div>
+</section>
+
+<div class="stats-hero">
+  <div class="stat-item"><span class="stat-num" id="dbclHsCount">—</span><span class="stat-label">Hồ sơ ĐBCL</span></div>
+  <div class="stat-item"><span class="stat-num">PDCA</span><span class="stat-label">Chu trình</span></div>
+  <div class="stat-item"><span class="stat-num">3</span><span class="stat-label">Đối tượng KS</span></div>
+  <div class="stat-item"><span class="stat-num">∞</span><span class="stat-label">Cải tiến</span></div>
+</div>
+
+<!-- ⭐ MODULE ĐBCL — 5 TAB -->
+<section style="padding:50px 20px">
+  <div style="text-align:center;margin-bottom:30px">
+    <span class="kicker">Hệ thống Quản trị Đảm bảo Chất lượng</span>
+    <h2>Module Đảm bảo Chất lượng — 12 chức năng / 5 nhóm</h2>
+  </div>
+
+  <!-- Tab navigation -->
+  <div class="dbcl-tabs" role="tablist">
+    <button class="dbcl-tab" data-tab="org" onclick="switchDbclTab('org')" role="tab">
+      <span class="dbcl-tab-icon">🏛</span>
+      <span class="dbcl-tab-label">Tổ ĐBCL</span>
+    </button>
+    <button class="dbcl-tab active" data-tab="plan" onclick="switchDbclTab('plan')" role="tab">
+      <span class="dbcl-tab-icon">📋</span>
+      <span class="dbcl-tab-label">Kế hoạch &amp; Vận hành</span>
+    </button>
+    <button class="dbcl-tab" data-tab="commit" onclick="switchDbclTab('commit')" role="tab">
+      <span class="dbcl-tab-icon">🤝</span>
+      <span class="dbcl-tab-label">Cam kết Chất lượng</span>
+    </button>
+    <button class="dbcl-tab" data-tab="report" onclick="switchDbclTab('report')" role="tab">
+      <span class="dbcl-tab-icon">📊</span>
+      <span class="dbcl-tab-label">Chỉ tiêu &amp; Báo cáo</span>
+    </button>
+    <button class="dbcl-tab" data-tab="link" onclick="switchDbclTab('link')" role="tab">
+      <span class="dbcl-tab-icon">🔗</span>
+      <span class="dbcl-tab-label">Kết nối Hệ thống</span>
+    </button>
+  </div>
+
+  <!-- Tab content containers -->
+  <div id="tab-org" class="dbcl-tab-content"></div>
+  <div id="tab-plan" class="dbcl-tab-content active"></div>
+  <div id="tab-commit" class="dbcl-tab-content"></div>
+  <div id="tab-report" class="dbcl-tab-content"></div>
+  <div id="tab-link" class="dbcl-tab-content"></div>
+</section>
+
+<!-- ⭐ Footer -->
+<footer style="background:#14532d;color:#d1fae5;padding:40px 20px;text-align:center;font-size:.88rem;margin-top:60px">
+  <p>© 2025-2026 · Hệ thống Quản trị số · Trường Tiểu học Diễn Liên</p>
+  <p style="opacity:.7;margin-top:6px">Module Đảm bảo Chất lượng · Theo định hướng Bộ GD&ĐT về QA giáo dục</p>
+</footer>
+
+<button id="scrollTopBtn" class="scroll-top-btn" title="Lên đầu trang" aria-label="Lên đầu trang">↑</button>
+
+<!-- ⭐ API_URL -->
+<script>
+  const API_URL = "https://thdienlien-api.xebatcheotrt.workers.dev/";
+</script>
+
+<!-- ⭐ CORE SHARED -->
+<script src="core-shared.js?v=2026.05.13-cf-worker" defer></script>
+<!-- ⭐ DBCL MODULE -->
+<script src="dbcl-app.js?v=2026.05.13-cf-worker" defer></script>
+</body>
+</html>

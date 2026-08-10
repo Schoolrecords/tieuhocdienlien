@@ -1,0 +1,49 @@
+{
+  "manifest_version": 3,
+  "name": "HSS Sync — Đồng bộ CSDL Ngành",
+  "version": "2.0.0",
+  "description": "Đồng bộ tự động kết quả học sinh từ QLCL lên CSDL ngành MOET",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://truong.csdl.moet.gov.vn/*",
+    "https://schoolrecords.github.io/*",
+    "https://script.google.com/*",
+    "https://script.googleusercontent.com/*"
+  ],
+  "externally_connectable": {
+    "matches": [
+      "https://schoolrecords.github.io/*"
+    ]
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "HSS Sync v2"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://truong.csdl.moet.gov.vn/*"],
+      "js": ["content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://schoolrecords.github.io/*"],
+      "js": ["qlcl-bridge.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["lib/xlsx.min.js", "icons/*"],
+      "matches": ["https://truong.csdl.moet.gov.vn/*", "https://schoolrecords.github.io/*"]
+    }
+  ]
+}

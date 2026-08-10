@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>HSS Sync v2</title>
+  <style>
+    body {
+      width: 320px;
+      margin: 0;
+      padding: 16px;
+      font-family: "Segoe UI", Arial, sans-serif;
+      font-size: 13px;
+      color: #1e293b;
+    }
+    h1 {
+      font-size: 15px;
+      margin: 0 0 12px;
+      color: #1e40af;
+    }
+    label {
+      display: block;
+      font-size: 12px;
+      font-weight: 600;
+      color: #475569;
+      margin-bottom: 4px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px 10px;
+      box-sizing: border-box;
+      border: 1.5px solid #cbd5e1;
+      border-radius: 8px;
+      font-size: 12.5px;
+      margin-bottom: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 9px 12px;
+      border: none;
+      border-radius: 8px;
+      background: #1e40af;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    button:hover { background: #1d4ed8; }
+    .hint {
+      font-size: 11px;
+      color: #64748b;
+      margin-top: 8px;
+      line-height: 1.6;
+    }
+    .ext-id {
+      background: #f1f5f9;
+      padding: 6px 8px;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 11px;
+      word-break: break-all;
+      margin-top: 6px;
+    }
+    .saved {
+      color: #16a34a;
+      font-size: 12px;
+      margin-top: 8px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏛️ HSS Sync — Cài đặt</h1>
+
+  <label for="apiUrl">URL Apps Script (API_URL)</label>
+  <input id="apiUrl" type="text" placeholder="https://script.google.com/macros/s/..." />
+
+  <button id="save">💾 Lưu</button>
+  <div id="saved" class="saved">✅ Đã lưu</div>
+
+  <div class="hint">
+    <strong>Extension ID:</strong>
+    <div class="ext-id" id="extId">…</div>
+    Dán ID này vào biến <code>HSS_EXT_ID</code> trong <code>qlcl-app.js</code>.
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
